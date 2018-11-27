@@ -1,5 +1,5 @@
 def main():
-    f = open("members02.txt", mode= "a")
+    f = open("members02.txt", mode= "w")
 
     f.write("内田\n")
     f.write("大江\n")

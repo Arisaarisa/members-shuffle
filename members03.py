@@ -2,7 +2,7 @@ import random
 
 
 def main():
-    f = open("members.txt", mode='r')
+    f = open("members02.txt", mode='r')
 
     text = f.read()
 
@@ -13,7 +13,7 @@ def main():
     tables = ["Table1", "Table2", "Table3"]
     for table_name in tables:
         if members == 6:
-            print(f"{tables[table_name]}{members}")
+            print(f"{tables[table_name]}:{members}")
             members - 6
 
         if members == 0:
