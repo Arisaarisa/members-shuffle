@@ -1,25 +1,25 @@
 import random
 
-
 def main():
     f = open("members02.txt", mode='r')
 
-    text = f.read()
+    members = f.read()
+    #
+    #members = text
+    #
+    #
+    # def shafull_tabele(members,)
 
-    members = text
 
-    f.close()
-
+#
     tables = ["Table1", "Table2", "Table3"]
+#
     for table_name in tables:
-        if members == 6:
-            print(f"{tables[table_name]}:{members}")
-            members - 6
-
+        shuffle_member = random.sample(members,k=6)
+        print(f"{tables[table_name]}:{shuffle_member}")
         if members == 0:
             print("席が確定しました")
             break
-
 
 #
 #     if member == 6:
@@ -31,5 +31,6 @@ def main():
 # #print(f"Table1:{member1}("\n")Table2:{member2}("\n")Table3:{member3}("\n")")
 
 
+    f.close()
 if __name__ == "__main__":
     main()
