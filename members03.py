@@ -5,8 +5,7 @@ def main():
 
     members = f.read()
     #
-    #members = text
-    #
+    members_list = members.split("\n")
     #
     # def shafull_tabele(members,)
 
@@ -15,9 +14,9 @@ def main():
     tables = ["Table1", "Table2", "Table3"]
 #
     for table_name in tables:
-        shuffle_member = random.sample(members,k=6)
-        print(f"{tables[table_name]}:{shuffle_member}")
-        if members == 0:
+        shuffle_member = random.shuffle(members_list,3)
+        # print(f"{table_name}:{shuffle_member}")
+        if shuffle_member == 6:
             print("席が確定しました")
             break
 
