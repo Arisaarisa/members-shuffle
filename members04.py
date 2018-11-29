@@ -14,7 +14,7 @@ def main():
         #     print(members_list)
         # elif members_list.remove():
         #
-    members_list.remove()
+    members_list.remove(members_list)
         #
         # print(random.sample(members_list,4))
     # shuffle_members2=random.randrange(members_list,6)
